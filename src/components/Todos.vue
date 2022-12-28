@@ -15,11 +15,7 @@
         v-bind:class="{ 'is-complete': todo.completed }"
       >
         {{ todo.title }}
-        <font-awesome-icon
-          @click="deleteTodo(todo.id)"
-          class="trash"
-          icon="trash"
-        />
+        <font-awesome-icon @click="deleteTodo(todo.id)" class="trash" icon="trash" />
       </div>
     </div>
   </div>
@@ -50,7 +46,7 @@ export default {
 
 <style scoped>
 h3 {
-  color: rgb(79, 141, 79);
+  color: rgb(32, 33, 43);
   font-size: 40px;
   margin: 0 auto 40px;
   text-align: center;
@@ -62,7 +58,7 @@ h3 {
 }
 .todo {
   border: 1px solid #ccc;
-  background: #41b883;
+  background: #538bca;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -85,7 +81,7 @@ h3 {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #468849;
+  background: #87b8da;
 }
 .incomplete-box {
   display: inline-block;
@@ -94,7 +90,7 @@ h3 {
   background: #80070d;
 }
 .is-complete {
-  background: #468849;
+  background: #7797ff;
   color: #fff;
 }
 </style>
